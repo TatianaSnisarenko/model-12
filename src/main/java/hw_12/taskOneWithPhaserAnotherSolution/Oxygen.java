@@ -3,8 +3,8 @@ package hw_12.taskOneWithPhaserAnotherSolution;
 import java.util.concurrent.Phaser;
 
 public class Oxygen extends Thread {
-    Phaser phaser;
-    public int stage;
+    private Phaser phaser;
+    private int stage;
 
     public Oxygen(Phaser phaser, int phase) {
         super("O");

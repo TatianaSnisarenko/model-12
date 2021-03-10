@@ -4,7 +4,7 @@ import java.util.concurrent.Phaser;
 
 public class Hydrogen extends Thread {
     private Phaser phaser;
-    public int stage;
+    private int stage;
 
     public Hydrogen(Phaser phaser, int phase) {
         super("H");
