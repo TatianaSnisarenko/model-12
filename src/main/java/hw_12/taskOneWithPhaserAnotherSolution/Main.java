@@ -10,7 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        final int countOfMoleculs = 3;
+        String ss = "OOHHHHOOHHHHOOHHHH";
+
+        final int countOfMoleculs = (int)ss.chars().filter(ch -> ch == 'O').count();
         final int countOfThreads = countOfMoleculs * 3;
 
         ExecutorService service = Executors.newFixedThreadPool(countOfThreads);

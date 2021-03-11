@@ -4,12 +4,12 @@ import java.util.concurrent.Phaser;
 
 public class Hydrogen extends Thread {
     private Phaser phaser;
-    private int stage;
+    private int phase;
 
     public Hydrogen(Phaser phaser, int phase) {
         super("H");
         this.phaser = phaser;
-        this.stage = phase;
+        this.phase = phase;
         phaser.register();
     }
 
@@ -19,7 +19,7 @@ public class Hydrogen extends Thread {
 
     @Override
     public void run() {
-        while (stage < phaser.getPhase()) {
+        while (phase < phaser.getPhase()) {
             phaser.arriveAndAwaitAdvance();
         }
         releaseHydrogen();
