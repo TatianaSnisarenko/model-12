@@ -1,4 +1,4 @@
-package hw_12.water;
+package hw_12.taskOnewater;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

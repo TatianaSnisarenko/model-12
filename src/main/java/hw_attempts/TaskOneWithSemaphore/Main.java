@@ -1,4 +1,4 @@
-package hw_12.TaskOneWithSemaphore;
+package hw_attempts.TaskOneWithSemaphore;
 
 import java.util.List;
 import java.util.Objects;

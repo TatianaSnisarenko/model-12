@@ -1,4 +1,4 @@
-package hw_12.taskOneWithPhaser;
+package hw_attempts.TaskOneWithSemaphore;
 
 import java.util.List;
 

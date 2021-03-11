@@ -1,16 +1,17 @@
-package hw_12.taskOneWithPhaser;
+package hw_attempts.taskOneWithPhaser;
 
 import java.util.concurrent.Phaser;
 
-public class Hydrogen extends Thread {
+public class Oxygen extends Thread{
     Phaser phaser;
 
-    public Hydrogen(Phaser phaser) {
-        super("H");
+    public Oxygen(Phaser phaser) {
+        super("O");
         this.phaser = phaser;
+
     }
 
-    public void releaseHydrogen() {
+    public void releaseOxygen() {
         System.out.print(getName());
     }
 
@@ -18,8 +19,9 @@ public class Hydrogen extends Thread {
     public void run() {
         phaser.register();
         phaser.arriveAndDeregister();
-        releaseHydrogen();
+        releaseOxygen();
 
 
     }
+
 }

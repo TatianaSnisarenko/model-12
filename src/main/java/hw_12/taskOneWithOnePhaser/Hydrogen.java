@@ -1,4 +1,4 @@
-package hw_12.taskOneWithPhaserAnotherSolution;
+package hw_12.taskOneWithOnePhaser;
 
 import java.util.concurrent.Phaser;
 

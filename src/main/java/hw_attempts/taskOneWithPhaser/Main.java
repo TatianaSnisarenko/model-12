@@ -1,7 +1,7 @@
-package hw_12.taskOneWithPhaser;
+package hw_attempts.taskOneWithPhaser;
 
 
-import hw_12.taskOne.ThreadUtils;
+import hw_attempts.taskOne.ThreadUtils;
 
 import java.util.List;
 import java.util.Objects;

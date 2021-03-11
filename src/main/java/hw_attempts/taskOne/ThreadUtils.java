@@ -1,4 +1,4 @@
-package hw_12.taskOne;
+package hw_attempts.taskOne;
 
 import java.util.List;
 

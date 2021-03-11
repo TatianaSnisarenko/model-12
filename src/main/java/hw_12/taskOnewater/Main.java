@@ -1,4 +1,4 @@
-package hw_12.water;
+package hw_12.taskOnewater;
 
 public class Main {
     public static void main(String[] args) {

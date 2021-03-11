@@ -1,18 +1,17 @@
-package hw_12.taskOne;
+package hw_attempts.taskOne;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
-public class Hydrogen extends Thread {
+public class Oxygen extends Thread {
     CyclicBarrier cyclicBarrier;
 
-    public Hydrogen(CyclicBarrier cyclicBarrier) {
-        super("H");
+    public Oxygen(CyclicBarrier cyclicBarrier) {
+        super("O");
         this.cyclicBarrier = cyclicBarrier;
-
     }
 
-    public void releaseHydrogen() {
+    public void releaseOxygen() {
         System.out.print(getName());
     }
 
@@ -20,8 +19,7 @@ public class Hydrogen extends Thread {
     public void run() {
         try {
             cyclicBarrier.await();
-            releaseHydrogen();
-
+            releaseOxygen();
         } catch (InterruptedException | BrokenBarrierException ex) {
             return;
         }
